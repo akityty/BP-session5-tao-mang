@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+Sample Array:
+<br>
+<input type="number" id="nhap" value="">
+<button type="button"onclick="add()">Add</button>
+<button type="button"onclick="show()">Display</button>
+<br>
+<p id="print"></p>
+<script>
+    let a = [];
+    let x = null;
+    function add() {
+        x = document.getElementById("nhap").value;
+            a.push(x);
+    }
+    function show() {
+        let i = a.length-1;
+            document.getElementById("print").innerText += "\n" + "a[" + i + "]= " + a[i];
+    }
+</script>
+</body>
+</html>
